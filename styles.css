@@ -1,0 +1,93 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+nav .left img{
+  width: 100px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  border-bottom: 1px solid #DCDCDC;
+  padding: 0px 5% 0px 5%;
+}
+
+nav .right a{
+  text-decoration: none;
+  color: black;
+}
+
+.slides{
+  position: relative;
+  width: 100%;
+}
+
+.slides .slide{
+  display: none;
+}
+
+.slides .slide img{
+  width: 100%;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+.slides .navigation{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.slides .navigation .prev, .slides .navigation .next{
+  cursor: pointer;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  user-select: none;
+}
+
+.slides .navigation .prev:hover, .slides .navigation .next:hover{
+  background: rgba(0,0,0,1);
+}
+
+@keyframes fade {
+  from {opacity: 0.3}
+  to {opacity: 1}
+}
+
+@media (max-width: 992px){
+  .slides .navigation .prev, .slides .navigation .next{
+    font-size: 18px;
+    padding: 13px;
+  }
+}
+
+@media (max-width: 768px){
+  .slides .navigation .prev, .slides .navigation .next{
+    font-size: 16px;
+    padding: 11px;
+  }
+}
+
+@media (max-width: 576px){
+  .slides .navigation .prev, .slides .navigation .next{
+    font-size: 14px;
+    padding: 9px;
+  }
+}
