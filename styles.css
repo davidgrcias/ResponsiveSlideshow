@@ -9,13 +9,13 @@ body{
 }
 
 nav .left img{
-  width: 100px;
+  width: 90px;
 }
 
 nav{
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  min-height: 80px;
   align-items: center;
   border-bottom: 1px solid #DCDCDC;
   padding: 0px 5% 0px 5%;
@@ -58,7 +58,7 @@ nav .right a{
   font-size: 20px;
   transition: 0.6s ease;
   color: white;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.2);
   user-select: none;
 }
 
@@ -80,14 +80,21 @@ nav .right a{
 
 @media (max-width: 768px){
   .slides .navigation .prev, .slides .navigation .next{
-    font-size: 16px;
-    padding: 11px;
+    font-size: 15px;
+    padding: 10px;
   }
 }
 
 @media (max-width: 576px){
   .slides .navigation .prev, .slides .navigation .next{
-    font-size: 14px;
-    padding: 9px;
+    font-size: 12px;
+    padding: 7px;
+  }
+}
+
+@media (max-width: 360px){
+  .slides .navigation .prev, .slides .navigation .next{
+    font-size: 11px;
+    padding: 6px;
   }
 }
