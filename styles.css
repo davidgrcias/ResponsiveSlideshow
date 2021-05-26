@@ -27,8 +27,8 @@ nav .right a{
 }
 
 .slides{
-  position: relative;
   width: 100%;
+  position: relative;
 }
 
 .slides .slide{
@@ -38,7 +38,7 @@ nav .right a{
 .slides .slide img{
   width: 100%;
   animation-name: fade;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
 }
 
 .slides .navigation{
@@ -56,10 +56,10 @@ nav .right a{
   padding: 16px;
   font-weight: bold;
   font-size: 20px;
-  transition: 0.6s ease;
   color: white;
   background: rgba(0,0,0,0.2);
   user-select: none;
+  transition: 0.6s ease;
 }
 
 .slides .navigation .prev:hover, .slides .navigation .next:hover{
@@ -67,7 +67,7 @@ nav .right a{
 }
 
 @keyframes fade {
-  from {opacity: 0.3}
+  from{opacity: 0.3}
   to {opacity: 1}
 }
 
